@@ -6,13 +6,13 @@ exports.up = function (knex) {
 
     table.string('make', 128).notNullable()
 
-    table.string('model', 128).notNullable()
+    table.string('model', 256).notNullable()
 
     table.integer('mileage').unsigned().notNullable()
 
-    table.string('title', 128).defaultTo('Unknown')
+    table.string('title', 128)
 
-    table.string('transmission', 128).defaultTo('Unknown')
+    table.string('transmission', 128)
   })
 };
 
